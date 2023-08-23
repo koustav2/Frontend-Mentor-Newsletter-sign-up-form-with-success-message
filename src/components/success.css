@@ -1,0 +1,59 @@
+:root {
+  --clr-primary: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+
+  --ff-primary: 'Roboto', sans-serif;
+
+  --fw-400: 500;
+  --fw-700: 600;
+}
+
+.container1 {
+  padding: 10px;
+  width: 85vw;
+  max-width: 350px; /* Limit the maximum width */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.modal {
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Responsive styles for button */
+button {
+  background-color: var(--clr-primary);
+  color: var(--white);
+  cursor: pointer;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 13px;
+
+  /* Adjust font size for smaller screens */
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
+}
+button:active,
+button:hover {
+  border: none;
+  background: rgb(252, 176, 69);
+  background: linear-gradient(
+    90deg,
+    rgba(252, 176, 69, 1) 0%,
+    rgba(253, 29, 29, 1) 48%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  box-shadow: 1px 16px 11px -2px rgba(253, 29, 29, 0.7);
+  -webkit-box-shadow: 1px 16px 11px -2px rgba(253, 29, 29, 0.7);
+  -moz-box-shadow: 1px 16px 11px -2px rgba(253, 29, 29, 0.7);
+}
