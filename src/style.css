@@ -104,7 +104,7 @@ h1 {
   font-size: 50px;
   @media (max-width: 480px) {
     /* Adjust image styles for mobile */
-    font-size: 0;
+    font-size: 30px;
   }
 }
 
