@@ -9,7 +9,7 @@
   --ff-primary: 'Roboto', sans-serif;
 
   --fw-400: 500;
-  --fw-700: 600;
+  --fw-700: 700;
 }
 /* Box sizing rules */
 *,
@@ -100,6 +100,13 @@ h2,
 h3 {
   font-weight: var(--fw-700);
 }
+h1 {
+  font-size: 50px;
+  @media (max-width: 480px) {
+    /* Adjust image styles for mobile */
+    font-size: 0;
+  }
+}
 
 ::selection {
   color: rgb(18, 21, 172);
@@ -139,10 +146,8 @@ h3 {
   align-items: center;
 
   @media (max-width: 480px) {
-    
     padding: 5px;
     justify-content: center;
-
   }
 }
 
@@ -169,7 +174,6 @@ ul {
   @media (max-width: 480px) {
     padding: 5px;
     justify-content: center;
-
   }
 }
 
@@ -185,10 +189,8 @@ form {
   border-radius: 10px;
   margin-left: 1.2rem;
   @media (max-width: 480px) {
-    
     margin: 0;
     padding: 0;
-
   }
 }
 form input.no-email {
